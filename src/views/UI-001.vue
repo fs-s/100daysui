@@ -4,8 +4,8 @@
       <form class="login-form">
         <h1>Create a new account</h1>
         <div class="form-group">
-          <label for="name">Your Name</label>
-          <input type="text" id="name" />
+          <label for="email">Your E-mail</label>
+          <input type="email" id="email" />
         </div>
         <div class="form-group">
           <label for="password">Password</label>
@@ -16,10 +16,17 @@
     </div>
   </div>
 </template>
+
+
+
+
+
 <style lang="scss" scoped>
 .login {
   &-card {
-    width: 360px;
+    text-align: left;
+    border-radius: 10px;
+    width: 300px;
     background: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 3rem;
@@ -29,6 +36,21 @@
     .form-group {
       display: flex;
       flex-direction: column;
+      margin-bottom: 1rem;
+    }
+    input{
+      border:none;
+      border-bottom: 2px solid currentColor;
+      padding: 10px 5px;
+    }
+    label{
+      margin-bottom: 5px;
+      color:blue;
+    }
+    button{
+      background: green;
+      
+      color: white;
     }
   }
 }
