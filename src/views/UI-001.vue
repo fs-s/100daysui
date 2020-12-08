@@ -30,8 +30,12 @@
     background: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 3rem;
+    //background:blue;
+    background-image: url(https://pbs.twimg.com/profile_images/1115002023806742528/8NfCm0z2.png);
+    bacg
     h1 {
       margin-top: 0;
+      color: whitesmoke;
     }
     .form-group {
       display: flex;
