@@ -12,7 +12,7 @@
           <input type="password" id="password" />
         </div>
       </form>
-      <button type="button">Sign up</button>
+      <button type="button" value="Refresh Page" onClick="location.href=location.href">Sign up</button>
     </div>
   </div>
 </template>
@@ -24,18 +24,20 @@
 <style lang="scss" scoped>
 .login {
   &-card {
+    margin:50px;
     text-align: left;
     border-radius: 10px;
     width: 300px;
     background: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 3rem;
+    padding: 4rem 2rem;
     //background:blue;
-    background-image: url(https://pbs.twimg.com/profile_images/1115002023806742528/8NfCm0z2.png);
+    background-image: url(https://i.pinimg.com/originals/60/04/30/600430c1d22c731b94cf4e7dae6b398a.gif);
     
     h1 {
       margin-top: 0;
       color: white;
+      margin-bottom: 100px;
     }
     .form-group {
       display: flex;
@@ -46,16 +48,30 @@
       border:none;
       border-bottom: 2px solid currentColor;
       padding: 10px 5px;
+      border-radius: 12px;
     }
     label{
       margin-bottom: 5px;
-      color:blue;
+      color:white;
     }
     button{
-      background: green;
-      
+      background: #004EFF;
+      padding:10px;
+      border-radius:10px;
       color: white;
+      outline: none;
+      margin-left:auto;
+      margin-right:auto;
+      display:flex;
+
     }
+    .button:hover {background-color: #3e8e41}
+
+  .button:active {
+    background-color: #3e8e41;
+    box-shadow: 10 10px #666;
+    transform: translateY(10px);
+}
   }
 }
 </style>
