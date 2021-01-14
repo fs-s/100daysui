@@ -1,9 +1,14 @@
 <template>
   <div class="flex-center">
     <div class="login-card">
-
-        <h1>Do you need help?</h1>
-
+      <h1>Do you need help?</h1>
+      <button
+        type="button"
+        value="Refresh Page"
+        onClick="location.href=location.href"
+      >
+        Don't Click Here
+      </button>
     </div>
   </div>
 </template>
@@ -13,6 +18,28 @@
 
 
 <style lang="scss" scoped>
+button {
+  background: pink;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  outline: none;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  position: relative;
+  bottom: -160px;
+}
+.button:hover {
+  background-color: #3e8e41;
+}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 10 10px #666;
+  transform: translateY(10px);
+}
+
 .login {
   &-card {
     text-align: left;
@@ -28,13 +55,8 @@
       color: white;
       height: 100px;
       display: flex;
+      color: chartreuse;
     }
-    h2{
-      display: flex;
-      padding: 10px;
-      text-align: center;
-      position:relative;
-}
   }
 }
 </style>
